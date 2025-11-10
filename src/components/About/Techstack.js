@@ -2,39 +2,27 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 import {
   SiPython,
-  SiApacheairflow,
-  SiApachespark,
   SiPandas,
   SiNumpy,
-  SiMongodb,
-  SiMysql,
-  SiPostgresql,
-  SiSnowflake,
-  SiAmazonaws,
-  SiDocker,
-  SiGit,
-  SiTableau,
+  SiScikitlearn,
+  SiTensorflow,
   SiPowerbi,
+  SiTableau,
+  SiGit,
+  SiDocker,
+  SiJupyter,
 } from "react-icons/si";
-import { DiJava } from "react-icons/di";
-import { TbSql } from "react-icons/tb";
-import { FaAws, FaChartBar } from "react-icons/fa"; // ChartBar used for Seaborn
+import { GiMicroscope, GiChemicalDrop } from "react-icons/gi";
+import { FaDna, FaBacteria } from "react-icons/fa";
+import { MdScience } from "react-icons/md";
 
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      {/* Languages */}
+      {/* Programming & Data Analysis */}
       <Col xs={4} md={2} className="tech-icons">
         <SiPython />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <TbSql />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJava />
-      </Col>
-
-      {/* Data Tools & Frameworks */}
       <Col xs={4} md={2} className="tech-icons">
         <SiPandas />
       </Col>
@@ -42,46 +30,46 @@ function Techstack() {
         <SiNumpy />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiApachespark />
+        <SiScikitlearn />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiApacheairflow />
+        <SiTensorflow />
       </Col>
 
-      {/* Databases & Warehousing */}
+      {/* Bioinformatics & Computational Biology */}
       <Col xs={4} md={2} className="tech-icons">
-        <SiMysql />
+        <FaDna />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPostgresql />
+        <GiMicroscope />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiMongodb />
+        <GiChemicalDrop />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiSnowflake />
-      </Col>
-
-      {/* Cloud & Deployment */}
-      <Col xs={4} md={2} className="tech-icons">
-        <FaAws />
+        <FaBacteria />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiDocker />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiGit />
+        <MdScience />
       </Col>
 
-      {/* Visualization & BI */}
-      <Col xs={4} md={2} className="tech-icons">
-        <SiTableau />
-      </Col>
+      {/* Visualization & Reporting */}
       <Col xs={4} md={2} className="tech-icons">
         <SiPowerbi />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <FaChartBar /> {/* Used as visual for Seaborn */}
+        <SiTableau />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiJupyter />
+      </Col>
+
+      {/* Dev Tools */}
+      <Col xs={4} md={2} className="tech-icons">
+        <SiGit />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiDocker />
       </Col>
     </Row>
   );

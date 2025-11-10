@@ -1,24 +1,54 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { SiApachespark } from "react-icons/si";
-import { FaDatabase, FaLaptopCode } from "react-icons/fa"; // For Hadoop, VS Code, Jupyter Notebook
-import { SiVisualstudiocode } from "react-icons/si"; // For VS Code
+import {
+  SiVisualstudiocode,
+  SiJupyter,
+  SiGooglecolab,
+  SiGithub,
+  SiDocker,
+  SiAnaconda,
+} from "react-icons/si";
+import { GiMicroscope, GiChemicalDrop } from "react-icons/gi";
+import { FaFlask, FaVial, FaDatabase } from "react-icons/fa";
 
 function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      {/* Big Data Tools */}
-      <Col xs={4} md={2} className="tech-icons" title="Hadoop">
-        <FaDatabase />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons" title="Apache Spark">
-        <SiApachespark />
-      </Col>
+      {/* Development & Coding Tools */}
       <Col xs={4} md={2} className="tech-icons" title="VS Code">
         <SiVisualstudiocode />
       </Col>
       <Col xs={4} md={2} className="tech-icons" title="Jupyter Notebook">
-        <FaLaptopCode />
+        <SiJupyter />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons" title="Google Colab">
+        <SiGooglecolab />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons" title="GitHub">
+        <SiGithub />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons" title="Anaconda">
+        <SiAnaconda />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons" title="Docker">
+        <SiDocker />
+      </Col>
+
+      {/* Laboratory & Analytical Tools */}
+      <Col xs={4} md={2} className="tech-icons" title="Microscope">
+        <GiMicroscope />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons" title="Chemical Analysis">
+        <GiChemicalDrop />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons" title="Analytical Flask">
+        <FaFlask />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons" title="Lab Testing">
+        <FaVial />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons" title="Database / Bio Data Repositories">
+        <FaDatabase />
       </Col>
     </Row>
   );

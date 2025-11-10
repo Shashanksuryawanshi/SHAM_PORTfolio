@@ -8,16 +8,26 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Shashank Surywanshi </span>
-            from <span className="purple"> Gwalior, M.P.</span>
+            Hi Everyone, I am <span className="purple">Shambhavi Kumari</span> 
+            from <span className="purple"> Ranchi, Jharkhand</span>.
             <br />
-            Currently pursuing my B.Tech in Computer Science from Lovely Professional University (2022-2026)
+            I am currently pursuing my <b className="purple">B.Tech in Biotechnology</b> 
+            at Lovely Professional University (2023–2027).
             <br />
-
+            <br />
+            I’m passionate about merging <b className="purple">biotechnology and data science</b> — 
+            exploring bioinformatics tools, machine learning, and 
+            data-driven biological analysis to bring innovation to life sciences.
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
+            I’ve gained hands-on experience as a <b className="purple">QC Microbiology Intern</b> 
+            at Centrient Pharmaceutical Company, where I performed environmental monitoring, 
+            sterility testing, and microbial culture analysis under GMP protocols.
+            <br />
+            <br />
+            Apart from my technical and research interests, I love engaging in other activities that help me grow personally!
           </p>
+
           <ul>
             <li className="about-activity">
               <ImPointRight /> Anchoring
@@ -26,18 +36,14 @@ function AboutCard() {
               <ImPointRight /> Public Speaking
             </li>
             <li className="about-activity">
-              <ImPointRight /> Socializing
+              <ImPointRight /> Socializing & Team Collaboration
             </li>
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
+            "Blending science, creativity, and data to make a real-world impact!"{" "}
           </p>
-          {/* <footer className="blockquote-footer">Anup</footer> */}
         </blockquote>
-        {/* <a href="https://medium.com/@anup-dubey09" target="_blank" rel="noopener noreferrer">
-          Visit my Medium Blogs
-        </a> */}
       </Card.Body>
     </Card>
   );
