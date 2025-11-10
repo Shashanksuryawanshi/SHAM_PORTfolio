@@ -54,7 +54,7 @@ function Home2Shambhavi() {
 
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/" // replace with actual LinkedIn URL
+                  href="https://www.linkedin.com/in/shambhavi-kumari-984a8a28b/" // replace with actual LinkedIn URL
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
@@ -65,7 +65,7 @@ function Home2Shambhavi() {
 
               <li className="social-icons">
                 <a
-                  href="https://github.com/" // replace with actual Github if available
+                  href="" // replace with actual Github if available
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
