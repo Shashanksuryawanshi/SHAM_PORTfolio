@@ -1,85 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="720" height="720" viewBox="0 0 720 720" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">Tech Researcher Avatar</title>
-  <desc id="desc">Flat-style professional female tech-researcher wearing a coat, glasses and a confident smile</desc>
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Tech researcher avatar (lab coat, glasses, laptop)</title>
+  <desc id="desc">Flat-style portrait of a female tech researcher with medium-dark skin, wearing a white lab coat and glasses, in front of a purple circular backdrop, working on a laptop.</desc>
 
   <!-- background -->
-  <rect width="100%" height="100%" fill="#0b0d10"/>
+  <rect width="100%" height="100%" fill="#0b0f14"/>
 
   <!-- purple circular backdrop -->
-  <circle cx="360" cy="260" r="220" fill="#6f3fb0"/>
-  <circle cx="360" cy="260" r="226" fill="none" stroke="#3f275b" stroke-width="6" opacity="0.22"/>
+  <g id="backdrop" transform="translate(512,300)">
+    <circle cx="0" cy="0" r="280" fill="#7b4fc0"/>
+    <circle cx="0" cy="0" r="286" fill="none" stroke="#33203f" stroke-width="12" opacity="0.2"/>
+  </g>
 
-  <!-- torso / coat -->
-  <g transform="translate(0,300)">
-    <path d="M170 420 L550 420 L520 260 L420 260 L420 320 L300 320 L300 260 L200 260 L170 420 Z" fill="#233041"/>
-    <path d="M300 260 L360 360 L420 260" fill="#2f3f4a" opacity="0.9"/>
-    <rect x="320" y="320" width="80" height="24" rx="6" fill="#e9f1ff" transform="skewX(-8)"/>
-    <rect x="340" y="328" width="40" height="8" rx="3" fill="#d6e6ff" transform="skewX(-8)"/>
-    <!-- lapel highlights -->
-    <path d="M200 260 L300 320 L300 360 L200 360 Z" fill="#2a3a45" opacity="0.6"/>
-    <path d="M420 260 L420 320 L520 360 L520 320 Z" fill="#2a3a45" opacity="0.6"/>
+  <!-- torso / laptop group -->
+  <g id="torso" transform="translate(512,640)">
+    <!-- laptop (in front) -->
+    <g id="laptop" transform="translate(0,30)">
+      <rect x="-260" y="-80" width="520" height="160" rx="12" fill="#2f3740"/>
+      <rect x="-240" y="-60" width="480" height="110" rx="6" fill="#1e2930"/>
+      <circle cx="0" cy="-12" r="18" fill="#28333b" opacity="0.9"/>
+      <rect x="-190" y="20" width="380" height="8" rx="4" fill="#2f3740" opacity="0.35"/>
+    </g>
+
+    <!-- coat -->
+    <g id="coat" transform="translate(0,10)">
+      <path d="M-220,40 L220,40 L180,-120 L80,-160 L80,-40 L-80,-40 L-80,-160 L-180,-120 Z" fill="#ffffff"/>
+      <!-- lapels -->
+      <path d="M-100,-40 L-20,-120 L-60,-120 L-120,-40 Z" fill="#f3f5f8"/>
+      <path d="M100,-40 L20,-120 L60,-120 L120,-40 Z" fill="#f3f5f8"/>
+      <!-- inner shirt -->
+      <rect x="-60" y="-40" width="120" height="80" rx="6" fill="#12233c"/>
+      <rect x="-20" y="-18" width="40" height="8" rx="3" fill="#d6e7ff"/>
+    </g>
   </g>
 
   <!-- neck -->
-  <rect x="330" y="230" width="60" height="44" rx="10" fill="#ffdcb4"/>
+  <rect x="452" y="360" width="120" height="56" rx="12" fill="#d99062"/>
 
-  <!-- head group (centered at 360,200) -->
-  <g transform="translate(360,200)">
+  <!-- head group (centered) -->
+  <g id="head" transform="translate(512,260)">
+    <!-- face base -->
+    <ellipse cx="0" cy="0" rx="120" ry="145" fill="#d99062"/>
 
-    <!-- main face -->
-    <ellipse cx="0" cy="0" rx="92" ry="106" fill="#ffdcb4"/>
+    <!-- hair back -->
+    <path d="M-125,-40 C-135,10 -110,120 -30,160 C30,185 90,170 120,140 C160,90 160,10 125,-40 C95,-70 25,-110 -5,-120 C-45,-132 -80,-110 -125,-40 Z" fill="#3b2a22"/>
 
-    <!-- hair back (low bun with loose front strands) -->
-    <path d="M-95,-10 C-115,20 -120,70 -70,110 C-40,140 40,140 70,110 C120,70 115,20 95,-10 C70,-45 40,-70 -10,-78 C-45,-80 -70,-70 -95,-10 Z"
-          fill="#2f2020"/>
     <!-- bun -->
-    <circle cx="-10" cy="-78" r="18" fill="#241617"/>
+    <circle cx="-12" cy="-118" r="18" fill="#2d1f1b"/>
 
-    <!-- forehead strand -->
-    <path d="M-54,-30 C-38,-48 -12,-58 14,-44" stroke="#3b2523" stroke-width="6" stroke-linecap="round" fill="none"/>
+    <!-- forehead highlight (bare forehead top) -->
+    <path d="M-72,-78 C-40,-110 40,-110 72,-78 C56,-100 16,-122 -12,-120 C-38,-117 -66,-94 -72,-78 Z" fill="#f7d9b9"/>
 
     <!-- ears -->
-    <ellipse cx="-96" cy="-2" rx="10" ry="14" fill="#ffdcb4"/>
-    <ellipse cx="96" cy="-2" rx="10" ry="14" fill="#ffdcb4"/>
+    <ellipse cx="-132" cy="-8" rx="12" ry="18" fill="#d99062"/>
+    <ellipse cx="132" cy="-8" rx="12" ry="18" fill="#d99062"/>
+    <!-- earrings -->
+    <circle cx="-132" cy="-8" r="4" fill="#f3c85b"/>
+    <circle cx="132" cy="-8" r="4" fill="#f3c85b"/>
 
-    <!-- glasses -->
-    <g transform="translate(0,-4)" stroke="#2a3b4a" stroke-width="3" fill="none">
-      <rect x="-58" y="-12" width="44" height="26" rx="8" ry="8" fill="#102129" opacity="0.95"/>
-      <rect x="14" y="-12" width="44" height="26" rx="8" ry="8" fill="#102129" opacity="0.95"/>
-      <path d="M-14,0 L14,0" stroke="#2a3b4a" stroke-width="3"/>
-      <circle cx="-36" cy="1" r="4.5" fill="#111619"/>
-      <circle cx="32" cy="1" r="4.5" fill="#111619"/>
-      <circle cx="-36" cy="1" r="1.8" fill="#e6eef6"/>
-      <circle cx="32" cy="1" r="1.8" fill="#e6eef6"/>
+    <!-- glasses frames -->
+    <g transform="translate(0,4)">
+      <rect x="-74" y="-20" width="68" height="46" rx="10" ry="10" fill="#14232b"/>
+      <rect x="6" y="-20" width="68" height="46" rx="10" ry="10" fill="#14232b"/>
+      <path d="M-6,6 L6,6" stroke="#14232b" stroke-width="6" stroke-linecap="round"/>
+      <!-- glass inner (slightly lighter) -->
+      <rect x="-68" y="-14" width="56" height="36" rx="8" ry="8" fill="#152731"/>
+      <rect x="12" y="-14" width="56" height="36" rx="8" ry="8" fill="#152731"/>
+      <!-- highlights -->
+      <circle cx="-38" cy="0" r="6" fill="#8da3b3"/>
+      <circle cx="34" cy="0" r="6" fill="#8da3b3"/>
     </g>
 
     <!-- eyebrows -->
-    <path d="M-48,-36 q20 -12 40 0" stroke="#3b2523" stroke-width="5" stroke-linecap="round" fill="none" opacity="0.95"/>
-    <path d="M6,-36 q20 -12 40 0" stroke="#3b2523" stroke-width="5" stroke-linecap="round" fill="none" opacity="0.95"/>
+    <path d="M-60,-44 q28 -12 60 0" stroke="#2b1a17" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <path d="M4,-44 q28 -12 60 0" stroke="#2b1a17" stroke-width="8" stroke-linecap="round" fill="none"/>
 
     <!-- nose -->
-    <path d="M0,6 q-6 9 0 12" stroke="#c27d4b" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M0,12 q-6 8 0 12" stroke="#b16b43" stroke-width="4" stroke-linecap="round" fill="none"/>
 
-    <!-- confident smile -->
-    <path d="M-30,44 q30 26 60 0" stroke="#b84a4a" stroke-width="4" stroke-linecap="round" fill="none"/>
-    <path d="M-18,40 q18 14 36 0" stroke="#ffd4d1" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.35"/>
+    <!-- mouth -->
+    <path d="M-34,44 q34 28 68 0" stroke="#a93b3b" stroke-width="5" stroke-linecap="round" fill="none"/>
+    <path d="M-24,40 q24 18 48 0" stroke="#ffd4d1" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6"/>
 
-    <!-- subtle cheek tones -->
-    <ellipse cx="-36" cy="30" rx="6" ry="4" fill="#f6cdb0" opacity="0.6"/>
-    <ellipse cx="36" cy="30" rx="6" ry="4" fill="#f6cdb0" opacity="0.6"/>
-
-    <!-- small microphone / badge on collar area (researcher gadget) -->
-    <g transform="translate(60,62) rotate(-12)">
-      <rect x="0" y="0" width="22" height="14" rx="3" fill="#dbefff"/>
-      <rect x="3" y="3" width="16" height="6" rx="2" fill="#b7d4ff"/>
-    </g>
+    <!-- cheeks -->
+    <ellipse cx="-44" cy="28" rx="8" ry="5" fill="#e6b99a" opacity="0.9"/>
+    <ellipse cx="44" cy="28" rx="8" ry="5" fill="#e6b99a" opacity="0.9"/>
 
   </g>
 
-  <!-- subtle decorative dots -->
-  <circle cx="120" cy="80" r="2.6" fill="#ffffff" opacity="0.6"/>
-  <circle cx="600" cy="60" r="2.6" fill="#ffffff" opacity="0.6"/>
-  <circle cx="640" cy="360" r="1.8" fill="#ffffff" opacity="0.5"/>
+  <!-- subtle decorative stars/dots -->
+  <circle cx="170" cy="110" r="3" fill="#e0e0e0" opacity="0.6"/>
+  <circle cx="880" cy="150" r="3" fill="#e0e0e0" opacity="0.6"/>
+  <circle cx="780" cy="450" r="2" fill="#e0e0e0" opacity="0.5"/>
 
 </svg>
