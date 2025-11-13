@@ -1,84 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="420" height="520" viewBox="0 0 420 520" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">Professional female HR analyst avatar</title>
-  <desc id="desc">A clean vector portrait of a professional woman in business attire for presentation and reports.</desc>
+<svg width="217px" height="237px" viewBox="0 0 217 237" version="1.1"
+     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     role="img" aria-labelledby="title desc">
+  <title id="title">female-hr-avatar</title>
+  <desc id="desc">Professional female avatar for HR presentation</desc>
 
-  <!-- Background circle -->
-  <rect width="100%" height="100%" fill="#ffffff"/>
+  <defs>
+    <circle id="c" cx="108" cy="108" r="108"></circle>
+    <path id="body-shape" d="M0,144 L0,0 L237.6,0 L237.6,144 L226.8,144 C226.8,203.646753 178.446753,252 118.8,252 C59.153247,252 10.8,203.646753 10.8,144 Z"/>
+    <path id="torso" d="M90,0 C118,0 140.4,22.5 140.4,50.4 L140.4,55.9 C145.5,56.8 149.4,61.25 149.4,66.6 L149.4,79.2 C149.4,84.65 145.37,89.15 140.12,89.89 C138.26,107.72 127.11,122.78 111.6,130.15 L111.6,146.7 L115.2,146.7 C151,146.7 180,175.71 180,211.5 L180,219.6 L0,219.6 L0,211.5 C0,175.71 29.01,146.7 64.8,146.7 L68.4,146.7 L68.4,130.15 C52.89,122.78 41.74,107.72 39.87,89.89 C34.63,89.15 30.6,84.65 30.6,79.2 L30.6,66.6 C30.6,61.2486 34.492,56.8062 39.6,55.9493 L39.6,50.4 C39.6,22.5648 62.1648,0 90,0 Z"/>
+    <path id="hair-back" d="M40,50 C35,20 70,0 108,0 C146,0 180,24 180,60 C180,110 160,140 140,150 C120,160 90,160 70,150 C50,140 40,100 40,50 Z"/>
+  </defs>
 
-  <!-- Soft rounded card background -->
-  <rect x="20" y="20" rx="24" ry="24" width="380" height="480" fill="#F6F7FB"/>
+  <g fill="none" fill-rule="evenodd">
+    <g transform="translate(-10,-15)">
+      <g transform="translate(10.8,36)">
+        <mask id="m1" fill="white"><use xlink:href="#c"/></mask>
+        <use xlink:href="#c" fill="#EDE7F6"/>
+        <g mask="url(#m1)" fill="#D8C0E8">
+          <rect x="0" y="0" width="216.45" height="216"/>
+        </g>
+      </g>
 
-  <!-- Decorative accent -->
-  <rect x="20" y="20" rx="24" ry="24" width="380" height="120" fill="#3E6BE8" opacity="0.12"/>
-  <circle cx="340" cy="80" r="28" fill="#3E6BE8" opacity="0.18"/>
+      <mask id="m2" fill="white"><use xlink:href="#body-shape"/></mask>
 
-  <!-- Head (circle) -->
-  <g transform="translate(210,160)">
-    <circle cx="0" cy="0" r="80" fill="#FFDDBB"/>
-    <!-- Hair -->
-    <path d="M-80,-10 C-80,-60  -20,-110  40,-100 C80,-95 110,-60 110,-10 C110,40 80,80 40,100 C-20,120 -80,100 -100,60 C-120,20 -100,-10 -80,-10Z"
-          fill="#3B2F2F"/>
-    <!-- Face shading -->
-    <ellipse cx="-10" cy="8" rx="52" ry="64" fill="#FFECB9" opacity="0.12"/>
-    <!-- Eyes -->
-    <g transform="translate(-22,-6)">
-      <ellipse cx="-10" cy="0" rx="8" ry="6" fill="#1F2937"/>
-      <ellipse cx="22" cy="0" rx="8" ry="6" fill="#1F2937"/>
-      <circle cx="-14" cy="-2" r="2.2" fill="#FFF"/>
-      <circle cx="18" cy="-2" r="2.2" fill="#FFF"/>
+      <g id="Avatar" mask="url(#m2)">
+        <g transform="translate(28.8,32.4)">
+          <mask id="m3" fill="white"><use xlink:href="#torso"/></mask>
+          <use xlink:href="#torso" fill="#F3E9D6"/>
+
+          <g mask="url(#m3)" fill="#FFDFC4">
+            <rect x="-28.8" y="0" width="238.38" height="220.35"/>
+          </g>
+
+          <path d="M39.6,84.6 C39.6,112.435 62.165,135 90,135 C117.835,135 140.4,112.435 140.4,84.6 L140.4,84.6 L140.4,91.8 C140.4,119.635 117.835,142.2 90,142.2 C62.165,142.2 39.6,119.635 39.6,91.8 Z"
+                fill="#000" fill-opacity="0.06" mask="url(#m3)"/>
+
+        </g>
+
+        <g transform="translate(28.8,32.4)">
+          <mask id="m4" fill="white"><use xlink:href="#hair-back"/></mask>
+          <use xlink:href="#hair-back" fill="#2E1A17"/>
+
+          <g mask="url(#m4)" fill="#3A2423">
+            <rect x="0" y="0" width="220" height="220"/>
+          </g>
+        </g>
+
+        <g transform="translate(68.4,73.8)">
+          <g transform="translate(0,0)">
+            <ellipse cx="52" cy="40" rx="42" ry="48" fill="#FFDDBB"/>
+
+            <path d="M12,40 C12,12 36,-10 64,-10 C92,-10 116,12 116,40 C116,68 92,96 64,96 C36,96 12,68 12,40 Z"
+                  fill="#2E1A17" opacity="0.95"/>
+
+            <ellipse cx="64" cy="40" rx="40" ry="46" fill="#FFDDBB"/>
+
+            <g transform="translate(24,22)" fill="#1C1C1C" fill-opacity="0.95">
+              <ellipse cx="6" cy="6" rx="5" ry="4.5"/>
+              <ellipse cx="34" cy="6" rx="5" ry="4.5"/>
+              <circle cx="5" cy="4" r="1.5" fill="#FFF"/>
+              <circle cx="33" cy="4" r="1.5" fill="#FFF"/>
+            </g>
+
+            <path d="M30,18 q10 -8 20 0" stroke="#2E1A17" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            <path d="M62,18 q10 -8 20 0" stroke="#2E1A17" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+            <path d="M64,46 q-3 6 0 10" stroke="#C27D4B" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+            <path d="M42,64 q11 9 34 0" stroke="#B84A4A" stroke-width="2.4" stroke-linecap="round" fill="none"/>
+
+            <g transform="translate(82,18)">
+              <circle cx="8" cy="8" r="4" fill="#FFDDBB"/>
+              <circle cx="8" cy="8" r="2.4" fill="#D8A675"/>
+            </g>
+
+            <g transform="translate(-6,76)">
+              <path d="M34,18 L80,18 L66,80 L48,80 Z" fill="#2B3A4A"/>
+              <path d="M48,20 L66,20 L62,36 L52,36 Z" fill="#FFFFFF"/>
+              <path d="M46,22 L54,46 L62,46 L70,22" fill="#2B3A4A" opacity="0.7"/>
+            </g>
+
+          </g>
+        </g>
+
+        <g transform="translate(40,153)">
+          <path d="M20,40 L60,16 L120,16 L160,40 L140,160 L40,160 Z" fill="#2B3A4A"/>
+          <path d="M60,16 L90,90 L70,150 L50,150 L30,90 Z" fill="#334859" opacity="0.7"/>
+          <path d="M120,16 L90,90 L110,150 L130,150 L150,90 Z" fill="#334859" opacity="0.7"/>
+          <path d="M60,40 L120,40 L100,110 L80,110 Z" fill="#FFFFFF"/>
+          <path d="M76,42 L92,78 L80,82 L64,44 Z" fill="#E9EEF8"/>
+          <path d="M124,42 L108,78 L120,82 L136,44 Z" fill="#E9EEF8"/>
+          <rect x="120" y="120" width="46" height="18" rx="6" fill="#E8EEF9"/>
+          <rect x="126" y="124" width="30" height="6" rx="3" fill="#C7D5F6"/>
+        </g>
+
+      </g>
     </g>
-    <!-- Eyebrows -->
-    <path d="M-36,-18 q12 -8 24 0" stroke="#3B2F2F" stroke-width="3" stroke-linecap="round" fill="none"/>
-    <path d="M6,-18 q12 -8 24 0" stroke="#3B2F2F" stroke-width="3" stroke-linecap="round" fill="none"/>
-
-    <!-- Nose -->
-    <path d="M0,4 q-4 8 0 12" stroke="#C27D4B" stroke-width="2" stroke-linecap="round" fill="none"/>
-
-    <!-- Smile -->
-    <path d="M-18,28 q18 14 36 0" stroke="#B84A4A" stroke-width="2.5" stroke-linecap="round" fill="none" />
-
-    <!-- Glasses (optional professional look) -->
-    <g stroke="#2B3948" stroke-width="2" fill="none" transform="translate(-6,-6)">
-      <rect x="-36" y="-6" width="26" height="16" rx="6" ry="6"/>
-      <rect x="10" y="-6" width="26" height="16" rx="6" ry="6"/>
-      <path d="M-10,0 L10,0" stroke="#2B3948"/>
-    </g>
   </g>
-
-  <!-- Neck -->
-  <rect x="190" y="255" width="40" height="36" rx="8" fill="#FFDDBB"/>
-
-  <!-- Upper body / blazer -->
-  <g transform="translate(80,300)">
-    <path d="M20,40 L60,16 L120,16 L160,40 L140,160 L40,160 Z" fill="#1F3140"/>
-    <path d="M60,16 L90,90 L70,150 L50,150 L30,90 Z" fill="#2E3D4E" opacity="0.7"/>
-    <path d="M120,16 L90,90 L110,150 L130,150 L150,90 Z" fill="#2E3D4E" opacity="0.7"/>
-    <!-- Shirt -->
-    <path d="M60,40 L120,40 L100,110 L80,110 Z" fill="#FFFFFF"/>
-    <!-- Collar -->
-    <path d="M76,42 L92,78 L80,82 L64,44 Z" fill="#E9EEF8"/>
-    <path d="M124,42 L108,78 L120,82 L136,44 Z" fill="#E9EEF8"/>
-    <!-- Badge / nameplate -->
-    <rect x="120" y="120" width="46" height="18" rx="6" fill="#E8EEF9"/>
-    <rect x="126" y="124" width="30" height="6" rx="3" fill="#C7D5F6"/>
-  </g>
-
-  <!-- Accessories: laptop icon to the left -->
-  <g transform="translate(40,360)" opacity="0.9">
-    <rect x="0" y="0" width="72" height="44" rx="6" fill="#F3F6FF" stroke="#D6E0FF"/>
-    <rect x="6" y="6" width="60" height="28" rx="4" fill="#FFFFFF"/>
-    <rect x="10" y="10" width="52" height="20" rx="3" fill="#E9EEF8"/>
-    <rect x="22" y="34" width="28" height="4" rx="2" fill="#D6E0FF"/>
-  </g>
-
-  <!-- Text labels (optional, can be removed) -->
-  <g transform="translate(40,440)">
-    <text x="0" y="0" font-family="Times, 'Times New Roman', serif" font-size="16" fill="#243447">Name: Priya Sharma</text>
-    <text x="0" y="22" font-family="Times, 'Times New Roman', serif" font-size="12" fill="#5B6B78">Role: HR Analyst</text>
-  </g>
-
-  <!-- subtle drop shadow under card -->
-  <ellipse cx="210" cy="500" rx="120" ry="14" fill="#2B3948" opacity="0.06"/>
-
 </svg>
