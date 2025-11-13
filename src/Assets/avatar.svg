@@ -1,82 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="720" height="720" viewBox="0 0 720 720" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">Professional female avatar</title>
-  <desc id="desc">Flat-style professional female avatar centered in circular purple background</desc>
+  <title id="title">Tech Researcher Avatar</title>
+  <desc id="desc">Flat-style professional female tech-researcher wearing a coat, glasses and a confident smile</desc>
 
   <!-- background -->
-  <rect width="100%" height="100%" fill="#0f0f17"/>
+  <rect width="100%" height="100%" fill="#0b0d10"/>
 
-  <!-- large purple circle -->
-  <circle cx="360" cy="300" r="220" fill="#6f3fb0"/>
+  <!-- purple circular backdrop -->
+  <circle cx="360" cy="260" r="220" fill="#6f3fb0"/>
+  <circle cx="360" cy="260" r="226" fill="none" stroke="#3f275b" stroke-width="6" opacity="0.22"/>
 
-  <!-- subtle outer ring -->
-  <circle cx="360" cy="300" r="224" fill="none" stroke="#5b328f" stroke-width="4" opacity="0.12"/>
-
-  <!-- shoulder / torso (professional blazer) -->
-  <g transform="translate(0,260)">
-    <path d="M170 420 L550 420 L480 260 L240 260 Z" fill="#213142"/>
-    <path d="M240 260 L360 360 L480 260" fill="#2f4556" opacity="0.9"/>
-    <rect x="300" y="300" width="120" height="80" rx="6" fill="#ffffff" transform="skewX(-8)"/>
-    <rect x="320" y="310" width="60" height="10" rx="3" fill="#e6eefb" transform="skewX(-8)"/>
+  <!-- torso / coat -->
+  <g transform="translate(0,300)">
+    <path d="M170 420 L550 420 L520 260 L420 260 L420 320 L300 320 L300 260 L200 260 L170 420 Z" fill="#233041"/>
+    <path d="M300 260 L360 360 L420 260" fill="#2f3f4a" opacity="0.9"/>
+    <rect x="320" y="320" width="80" height="24" rx="6" fill="#e9f1ff" transform="skewX(-8)"/>
+    <rect x="340" y="328" width="40" height="8" rx="3" fill="#d6e6ff" transform="skewX(-8)"/>
+    <!-- lapel highlights -->
+    <path d="M200 260 L300 320 L300 360 L200 360 Z" fill="#2a3a45" opacity="0.6"/>
+    <path d="M420 260 L420 320 L520 360 L520 320 Z" fill="#2a3a45" opacity="0.6"/>
   </g>
 
   <!-- neck -->
-  <rect x="330" y="240" width="60" height="52" rx="10" fill="#ffdcb4"/>
+  <rect x="330" y="230" width="60" height="44" rx="10" fill="#ffdcb4"/>
 
   <!-- head group (centered at 360,200) -->
   <g transform="translate(360,200)">
 
-    <!-- face -->
-    <ellipse cx="0" cy="0" rx="95" ry="110" fill="#ffdcb4"/>
+    <!-- main face -->
+    <ellipse cx="0" cy="0" rx="92" ry="106" fill="#ffdcb4"/>
 
-    <!-- hair back (long bob) -->
-    <path d="M-95,-30 C-120,0 -120,80 -60,130 C-30,155 30,155 60,130 C120,80 120,0 95,-30 C80,-40 20,-70 -5,-62 C-28,-55 -60,-50 -95,-30 Z"
-          fill="#402b22"/>
+    <!-- hair back (low bun with loose front strands) -->
+    <path d="M-95,-10 C-115,20 -120,70 -70,110 C-40,140 40,140 70,110 C120,70 115,20 95,-10 C70,-45 40,-70 -10,-78 C-45,-80 -70,-70 -95,-10 Z"
+          fill="#2f2020"/>
+    <!-- bun -->
+    <circle cx="-10" cy="-78" r="18" fill="#241617"/>
 
-    <!-- hair fringe -->
-    <path d="M-60,-60 C-30,-80 30,-78 70,-52 C60,-64 30,-84 -10,-86 C-45,-87 -70,-70 -60,-60 Z"
-          fill="#3b251d"/>
+    <!-- forehead strand -->
+    <path d="M-54,-30 C-38,-48 -12,-58 14,-44" stroke="#3b2523" stroke-width="6" stroke-linecap="round" fill="none"/>
 
-    <!-- left ear -->
-    <ellipse cx="-92" cy="-2" rx="10" ry="14" fill="#ffdcb4"/>
+    <!-- ears -->
+    <ellipse cx="-96" cy="-2" rx="10" ry="14" fill="#ffdcb4"/>
+    <ellipse cx="96" cy="-2" rx="10" ry="14" fill="#ffdcb4"/>
 
-    <!-- right ear -->
-    <ellipse cx="92" cy="-2" rx="10" ry="14" fill="#ffdcb4"/>
-
-    <!-- eyes -->
-    <g transform="translate(0,-6)">
-      <ellipse cx="-28" cy="0" rx="12" ry="10" fill="#1b1b1b"/>
-      <ellipse cx="28" cy="0" rx="12" ry="10" fill="#1b1b1b"/>
-      <circle cx="-24" cy="-2" r="3.5" fill="#ffffff"/>
-      <circle cx="32" cy="-2" r="3.5" fill="#ffffff"/>
+    <!-- glasses -->
+    <g transform="translate(0,-4)" stroke="#2a3b4a" stroke-width="3" fill="none">
+      <rect x="-58" y="-12" width="44" height="26" rx="8" ry="8" fill="#102129" opacity="0.95"/>
+      <rect x="14" y="-12" width="44" height="26" rx="8" ry="8" fill="#102129" opacity="0.95"/>
+      <path d="M-14,0 L14,0" stroke="#2a3b4a" stroke-width="3"/>
+      <circle cx="-36" cy="1" r="4.5" fill="#111619"/>
+      <circle cx="32" cy="1" r="4.5" fill="#111619"/>
+      <circle cx="-36" cy="1" r="1.8" fill="#e6eef6"/>
+      <circle cx="32" cy="1" r="1.8" fill="#e6eef6"/>
     </g>
 
     <!-- eyebrows -->
-    <path d="M-46,-26 q20 -12 40 0" stroke="#3b251d" stroke-width="6" stroke-linecap="round" fill="none" opacity="0.95"/>
-    <path d="M6,-26 q20 -12 40 0" stroke="#3b251d" stroke-width="6" stroke-linecap="round" fill="none" opacity="0.95"/>
+    <path d="M-48,-36 q20 -12 40 0" stroke="#3b2523" stroke-width="5" stroke-linecap="round" fill="none" opacity="0.95"/>
+    <path d="M6,-36 q20 -12 40 0" stroke="#3b2523" stroke-width="5" stroke-linecap="round" fill="none" opacity="0.95"/>
 
-    <!-- nose (simple) -->
-    <path d="M0,8 q-6 10 0 16" stroke="#c27d4b" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <!-- nose -->
+    <path d="M0,6 q-6 9 0 12" stroke="#c27d4b" stroke-width="3" stroke-linecap="round" fill="none"/>
 
-    <!-- mouth (smile) -->
-    <path d="M-28,36 q28 20 56 0" stroke="#b84a4a" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <!-- confident smile -->
+    <path d="M-30,44 q30 26 60 0" stroke="#b84a4a" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <path d="M-18,40 q18 14 36 0" stroke="#ffd4d1" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.35"/>
 
-    <!-- subtle cheek highlights -->
-    <ellipse cx="-38" cy="26" rx="6" ry="4" fill="#f6cdb0" opacity="0.7"/>
-    <ellipse cx="38" cy="26" rx="6" ry="4" fill="#f6cdb0" opacity="0.7"/>
+    <!-- subtle cheek tones -->
+    <ellipse cx="-36" cy="30" rx="6" ry="4" fill="#f6cdb0" opacity="0.6"/>
+    <ellipse cx="36" cy="30" rx="6" ry="4" fill="#f6cdb0" opacity="0.6"/>
 
-    <!-- glasses optional (light) -->
-    <g transform="translate(0,-6)" stroke="#2a3b4a" stroke-width="2" fill="none" opacity="0.9">
-      <rect x="-46" y="-10" width="34" height="20" rx="8" ry="8"/>
-      <rect x="12" y="-10" width="34" height="20" rx="8" ry="8"/>
-      <path d="M-12,0 L12,0"/>
+    <!-- small microphone / badge on collar area (researcher gadget) -->
+    <g transform="translate(60,62) rotate(-12)">
+      <rect x="0" y="0" width="22" height="14" rx="3" fill="#dbefff"/>
+      <rect x="3" y="3" width="16" height="6" rx="2" fill="#b7d4ff"/>
     </g>
 
   </g>
 
-  <!-- small decorative dots -->
-  <circle cx="120" cy="90" r="2.4" fill="#ffffff" opacity="0.7"/>
-  <circle cx="560" cy="60" r="2.4" fill="#ffffff" opacity="0.7"/>
-  <circle cx="620" cy="360" r="1.8" fill="#ffffff" opacity="0.6"/>
+  <!-- subtle decorative dots -->
+  <circle cx="120" cy="80" r="2.6" fill="#ffffff" opacity="0.6"/>
+  <circle cx="600" cy="60" r="2.6" fill="#ffffff" opacity="0.6"/>
+  <circle cx="640" cy="360" r="1.8" fill="#ffffff" opacity="0.5"/>
 
 </svg>
